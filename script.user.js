@@ -11,13 +11,13 @@
 
 (function() {
     'use strict';
-    var banList = ['โทนี่หน้าหี', 'ไม่ต้อนรับพวกโลกสวย','โทนี่บุหรี่ทำเอง'];
+    var banList = ['Bonne chance', 'ไม่ต้อนรับพวกโลกสวย','โทนี่บุหรี่ทำเอง','Bonnechance','โลชั่นน้ำหอม 290 บาท','โลกสวยห้ามเข้ามาดู','18++ ไม่ต้อนรับพวกโลกสวย','18+++ ไม่ต้อนรับพวกโลกสวย'];
 setInterval(function() {
   var a = document.querySelectorAll('[role="article"]')
   a.forEach((d) => {
     banList.map((text) => {
       if (d.innerText.toLocaleLowerCase().indexOf(text) >= 0) {
-        console.log('removed');
+        console.log('removed : '+d);
         d.remove()
       }
     })
