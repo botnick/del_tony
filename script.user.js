@@ -4,7 +4,7 @@
 // @include        https://*.facebook.com/*
 // @require        http://code.jquery.com/jquery-1.7.1.min.js
 // @grant       none
-// @version 4
+// @version 5
 // @namespace https:/botnick.me/js
 // @description หลบโทนี่บุหรี่ทำเอง
 // ==/UserScript==
