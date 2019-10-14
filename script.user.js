@@ -17,7 +17,11 @@ setInterval(function() {
   a.forEach((d) => {
     banList.map((text) => {
       if (d.innerText.toLocaleLowerCase().indexOf(text) >= 0) {
-        console.log('removed : '+text + "::" + d.innerText.substring(42, 0));
+        var res = d.innerText.replace("=", "");
+        var res1 = res.replace("ได้รับการสนับสนุน", "");
+        var res2 = res1.replace("กำลังถ่ายทอดสด", "");
+        var res3 = res2.replace("กำลังเล่น", "");
+        console.log('removed : '+text + "::" + res3.substring(0, 100));
         d.remove()
       }
     })
