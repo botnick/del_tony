@@ -17,7 +17,7 @@ setInterval(function() {
   a.forEach((d) => {
     banList.map((text) => {
       if (d.innerText.toLocaleLowerCase().indexOf(text) >= 0) {
-        console.log('removed : '+text + "::" + d.innerText.substring(0, 80));
+        console.log('removed : '+text + "::" + d.innerText.substring(42, 0));
         d.remove()
       }
     })
