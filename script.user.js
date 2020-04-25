@@ -11,7 +11,7 @@
 
 (function() {
     'use strict';
-    var banList = ['ได้รับการสนับสนุน',"กำลังถ่ายทอดสด",'กำลังเล่น','ปาร์ตี้รับชมของ',''];
+    var banList = ['ได้รับการสนับสนุน',"กำลังถ่ายทอดสด",'กำลังเล่น','ปาร์ตี้รับชมของ','is live now','sponsored'];
 setInterval(function() {
   var a = document.querySelectorAll('[role="article"]')
   a.forEach((d) => {
